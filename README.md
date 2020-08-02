@@ -1,12 +1,12 @@
 # nvim
 nvim configuration + plugins + themes.
-##init.vim
+## init.vim
 In this file we point to the pluggins files.
-##vim-plug 
+## vim-plug 
 This folder contains the file with all the plugings of nvim.
-##themes
+## themes
 This folder contains each of the theme files.
-##keys
+## keys
 This folder contains the file with all the mappings for nvim.
-##General
+## General
 This folder contains the settings for nvim. 
