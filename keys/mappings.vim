@@ -43,3 +43,12 @@ nnoremap <C-l> <C-w>l
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
 
+" Ctrl-j/k deletes blank line below/above, and Alt-j/k inserts.
+" ctrl-j deletes the line below the current line, if its blank.
+" ctrl-k deletes the line above the current line, if its blank.
+" alt-j inserts a balnk line below the current line.
+" alt-k inserts a blank line above the current line.
+nnoremap <silent><C-j> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
+nnoremap <silent><C-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
+nnoremap <silent><A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+nnoremap <silent><A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>

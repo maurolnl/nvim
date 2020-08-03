@@ -35,6 +35,7 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set relativenumber                      " Enables the relative number to make quick jumps between lines"
 "set autochdir                           " Your working directory will always be the same as your working directory
+set nolist                              "Keep the hideen characters hidden"
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
